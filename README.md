@@ -1,6 +1,5 @@
-<a name="english"></a>
 # Portfolio of Blockchain and Web3 Development
-
+<a name="english"></a>
 **Language:** [English](#english) | [Español](#espanol)
 
 Welcome! In this repository, you will find a selection of exciting projects related to blockchain development, web3, and smart contracts.
