@@ -1,3 +1,5 @@
+![banner](./README_assets/banner.png)
+
 <a name="english"></a>
 
 # Portfolio of Blockchain and Web3 Development
