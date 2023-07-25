@@ -8,9 +8,7 @@ import { Base64 } from "@openzeppelin/contracts/utils/Base64.sol";
 
 contract DeployNoggleNFT is Script {
     function run() external returns (NoggleNFT) {
-        // lee los archivos svg
-        // para poder leer escribir algun archivo debemos darle permisos
-        // a nuestro entorno de ejecucion en foundry.toml
+        
         string memory clasicNoggleSVG = vm.readFile("./img/nogglesClasic.svg");
         string memory purpleNoggleSVG = vm.readFile("./img/nogglesPurple.svg");
         vm.startBroadcast();

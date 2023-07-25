@@ -9,7 +9,6 @@ import {Vm} from "forge-std/Vm.sol";
 import {VRFCoordinatorV2Mock} from "@chainlink/contracts/src/v0.8/mocks/VRFCoordinatorV2Mock.sol";
 
 contract RaffleTest is Test{
-    /* events for the contracts to test */
     event EnetedRaffle(
         address indexed player
     );
@@ -42,7 +41,7 @@ contract RaffleTest is Test{
             subscriptionId,
             callbackGasLimit,
             /*link*/,
-            // deployerKey
+            /*deployerKey*/
         ) = helperConfig.activeNetworkConfig();
         
     }
@@ -82,10 +81,6 @@ contract RaffleTest is Test{
 
     function testEmitEventOnEntrance() public {
         vm.startPrank(PLAYER1);
-            // expectEmit ayuda a mostrar los eventos que se esperan
-            // en este caso se espera que se emita una variable
-            // y como no hay datos no indexados se ponen false al final
-            // si hubiera datos no indexados se pondrían true
             vm.expectEmit(true, false, false, false, address(raffle));
 
             emit EnetedRaffle(PLAYER1);
@@ -188,16 +183,6 @@ contract RaffleTest is Test{
         vm.recordLogs(); //guarda todos los logs que se emitan los cules se pueden ver con getRecordedLogs()
         raffle.performUpkeep("");
         Vm.Log[] memory entries = vm.getRecordedLogs(); // aqui se obtienen los logs registrados
-        // usamos la libreria Vm para obtener los datos de los logs
-
-        /*
-        Si vemos el contrato Raffle.sol vemos cuando llamamos a performUpkeep
-        se realizan 2 eventosen este orden
-        1) dentro de la funcion VRFCoordinatorV2Mock.requestRandomWords
-        2) otro en la funcion que llamamos 
-        por lo tanto entries[0] es el primer evento y entries[1] es el segundo
-        topics[0] es el topic del evento y topics[1] es el topic del requestId
-        */
         bytes32 requestId = entries[1].topics[1];
 
         Raffle.RaffleState aux_raffleState = raffle.getRaffleState();
@@ -207,17 +192,9 @@ contract RaffleTest is Test{
 
     }
 
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Fuzzing Test mas info en https://es.wikipedia.org/wiki/Fuzzing                                              //
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
     /////////////////////////
     // fulfillsRandomWords //
     /////////////////////////
-
-
-    // cuando agregamos a la funcion en test alguna variable lo que hara foundry es que 
-    // hara un fuzzing de la funcion y probara con diferentes valores de la variable
     function testFulfillRandomWordsCanOnlyBeCallAfterPerformUpKeep(
         uint256 randomRequestId
     ) public raffleEnterAndTimePassed skipFork {
@@ -247,19 +224,11 @@ contract RaffleTest is Test{
         bytes32 requestId = entries[1].topics[1];
 
         uint256 a_previousTimeStamp = raffle.getLastTimeStamp();
-
-        //finjimos que somos chainlink y llamamos a la funcion
+        
         VRFCoordinatorV2Mock(vrfCordinator).fulfillRandomWords(
             uint256(requestId),
             address(raffle)
         );
-
-        /*
-        assert(uint256(raffle.getRaffleState()) == 0);
-        assert(raffle.getRecentWinner() != address(0));
-        assert(raffle.getTotalPlayers() == 0);
-        assert(a_previousTimeStamp < raffle.getLastTimeStamp());
-        */
         assert(raffle.getRecentWinner().balance == (STARTING_BALANCE + prize - ticketPrice));
     }
 

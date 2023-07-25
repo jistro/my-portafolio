@@ -5,12 +5,6 @@ import {VRFCoordinatorV2Interface} from "@chainlink/contracts/src/v0.8/interface
 import {VRFConsumerBaseV2} from "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 import {AutomationCompatibleInterface} from "@chainlink/contracts/src/v0.8/interfaces/AutomationCompatibleInterface.sol";
 
-/**
-* @title Contrato de "Rifa con causa"
-* @author jistro.eth
-* @notice Contrato para la rifa 
-* @dev Implementa chainlink VRF
-*/ 
 
 contract Raffle is VRFConsumerBaseV2{
     error Raffle__notEnoughAVAX();
@@ -38,19 +32,11 @@ contract Raffle is VRFConsumerBaseV2{
     bytes32 private immutable i_keyHash;
     uint64 private immutable i_subscriptionId;
     uint32 private immutable i_callbackGasLimit;
-    /// @dev Lista de participantes
-    ///      el uso de payable es para poder enviarle
-    ///      avax a la direccion
     address payable[] private s_players;
     uint256 private s_lastTimeStamp;
     address private s_recentWinner;
     RaffleState private s_raffleState;
     
-
-    // para armar el nombre de la variable de evento debemos
-        // 1. Cada palabra inicia con mayuscula
-        // 2. Evitar el uso de caracteres especiales como guiones
-        // 3. Cada accion debe ser en verbo imperativo
 
     /** Events */
     event EnetedRaffle(
@@ -98,17 +84,6 @@ contract Raffle is VRFConsumerBaseV2{
         emit EnetedRaffle(msg.sender);
     }
 
-    /**
-     * 
-     *  @dev esta funcion hace la llamada los nodos de chainlink automation
-     *  para ver si es tiempo de ejecutar esa funcion
-     *  estos sigunetes parametros deben ser verdaderos para que se devuelva true
-     *  1. el intervalo de tiempo que ha pasado desde que la rifa se ejecuto por ultima vez
-     *  2. el estado de la rifa debe ser abierto
-     *  3. el contrato tiene AVAX suficiente
-     *  4. (implicito) La suscripcion de chainlink debe estar activa y fondeada con LINK
-     */
-
     function checkUpkeep(
         bytes memory /*checkData*/
     ) public view returns (bool upkeepNeeded, bytes memory /*performData*/) {
@@ -120,9 +95,6 @@ contract Raffle is VRFConsumerBaseV2{
         return (upkeepNeeded, "0x0");
     }
 
-    //function pickWinner() external {
-
-    // performUpkeep es la funcion que se llama chainlink automation
     function performUpkeep(bytes memory /*performData*/) external {
         (bool upkeepNeeded, ) = checkUpkeep("");
 
@@ -149,7 +121,6 @@ contract Raffle is VRFConsumerBaseV2{
             NUM_WORDS
         );
         emit RequestedRaffleWinner(requestId);
-        //s_raffleState = RaffleState.CLOSED;
     }
 
     function fulfillRandomWords(
