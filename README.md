@@ -2,7 +2,7 @@
 
 <a name="english"></a>
 
-# Portfolio of Blockchain and Web3 Development
+# My portfolio
 
 **Language:** [English](#english) | [Español](#espanol)
 
@@ -50,7 +50,7 @@ ICPoap is a protocol on the Internet Computer storing data for POAP. It enables 
 
 ---
 <a name="espanol"></a>
-# Portafolio de Desarrollo Blockchain y Web3
+# Portafolio
 
 **Idioma:** [English](#english) | [Español](#espanol)
 
