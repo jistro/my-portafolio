@@ -28,7 +28,7 @@ Inspired by the NFT/DAO project [nouns](https://nouns.wtf/), Noggles NFT is a co
 
 An easy-to-use dApp lets any NFT holder or community group (called a SAFE) set up a wrapped NFT Smart Contract. This is for community members who want a new direction. Features include choosing new fees for creators, making a list of addresses or tokenIDs that can join, setting a new price for MINT, and choosing metadata. 
 
-[Repo page](https://github.com/ariutokintumi/gm-fam)
+[Repo page](https://github.com/jistro/gmFam) 
 
 ### Arbitrum Gas Hub
 
@@ -76,7 +76,7 @@ Inspirado en el proyecto de NFT/DAO [nouns](https://nouns.wtf/), Noggles NFT es 
 
 Una dApp fácil de usar permite a cualquier titular de NFT o grupo comunitario (llamado SAFE) configurar un contrato inteligente NFT envuelto. Esto es para miembros de la comunidad que quieren una nueva dirección. Las características incluyen elegir nuevas tarifas para los creadores, hacer una lista de direcciones o tokenID que pueden unirse, establecer un nuevo precio para MINT y elegir metadatos.
 
-[Repositorio](https://github.com/ariutokintumi/gm-fam)
+[Repositorio](https://github.com/jistro/gmFam)
 
 ### Arbitrum Gas Hub
 
