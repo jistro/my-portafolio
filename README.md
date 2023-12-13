@@ -14,21 +14,23 @@ Welcome! In this repository, you will find a selection of exciting projects rela
 
 Lottery is a lottery system written in Solidity, which utilizes blockchain technology for its operation. The highlight of this project is the incorporation of [Chainlink VRF](https://docs.chain.link/docs/chainlink-vrf/) to generate random numbers, ensuring transparency and fairness in the process. Additionally, we have implemented [Chainlink Automation](https://docs.chain.link/chainlink-automation/introduction) to program the automation of the raffle, making the entire process reliable and secure.
 
-[Repo page](https://github.com/jistro/my-portafolio/tree/main/NogglesNFT)
+[Repo page](https://github.com/jistro/my-portafolio/tree/main/lottery)
 
 ### Noggles NFT Project
 
 Inspired by the NFT/DAO project [nouns](https://nouns.wtf/), Noggles NFT is a collection of unique lenses stored entirely on the blockchain. Users have the exciting ability to change the color of these lenses. Behind the scenes, users simply modify the metadata associated with the token, giving them the freedom to customize their experience and showcase their style.
 
-[Repo page](https://github.com/jistro/my-portafolio/tree/main/lottery)
+[Repo page](https://github.com/jistro/my-portafolio/tree/main/NogglesNFT)
 
-### gm Fam!
+### gm Fam! // For ETHOnline 2023 Async hackathon
 
 <img src="./README_assets/coverGmFam.png" height="300px"/>
 
 An easy-to-use dApp lets any NFT holder or community group (called a SAFE) set up a wrapped NFT Smart Contract. This is for community members who want a new direction. Features include choosing new fees for creators, making a list of addresses or tokenIDs that can join, setting a new price for MINT, and choosing metadata. 
 
 [Repo page](https://github.com/jistro/gmFam) 
+
+[ETH Global](https://ethglobal.com/showcase/gm-fam-ayigu)
 
 ### Arbitrum Gas Hub
 
@@ -39,6 +41,17 @@ Gas hub is a vital tool tailored for Arbitrum users. It helps users access real-
 [Repo page](https://github.com/jistro/GasStation_Arbitrum)
 
 [page](https://gas-hub.vercel.app/)
+
+### X-Chain Arbitraty Execution // For Constellation: A Chainlink Hackathon
+
+A secured Arbitrary Execution library to call any function in the destination chain with any number of parameters and a Transaction Tunneling that will be used for EOA signed transactions verification and decoding with the library implementation in the destination chain.
+
+[DevPost](https://devpost.com/software/x-chain-arbitraty-execution)
+
+[Repo](https://github.com/jistro/X-Chain_Arbitrary_Execution)
+
+[video](https://www.youtube.com/watch?v=odcTzwmhhNk)
+
 
 ### ICPoaps
 
@@ -70,13 +83,15 @@ Inspirado en el proyecto de NFT/DAO [nouns](https://nouns.wtf/), Noggles NFT es 
 
 [Repositorio](https://github.com/jistro/my-portafolio/tree/main/NogglesNFT)
 
-## gm Fam!
+## gm Fam! // Para ETHOnline 2023 Async hackathon
 
 <img src="./README_assets/coverGmFam.png" height="300px"/>
 
 Una dApp fácil de usar permite a cualquier titular de NFT o grupo comunitario (llamado SAFE) configurar un contrato inteligente NFT envuelto. Esto es para miembros de la comunidad que quieren una nueva dirección. Las características incluyen elegir nuevas tarifas para los creadores, hacer una lista de direcciones o tokenID que pueden unirse, establecer un nuevo precio para MINT y elegir metadatos.
 
 [Repositorio](https://github.com/jistro/gmFam)
+
+[ETH Global](https://ethglobal.com/showcase/gm-fam-ayigu)
 
 ### Arbitrum Gas Hub
 
@@ -87,6 +102,18 @@ Gas hub es una herramienta vital diseñada para los usuarios de Arbitrum. Ayuda 
 [Repositorio](https://github.com/jistro/GasStation_Arbitrum)
 
 [Pagina web](https://gas-hub.vercel.app/)
+
+
+### X-Chain Arbitraty Execution // For Constellation: A Chainlink Hackathon
+
+Una biblioteca de Ejecución Arbitraria segura para llamar a cualquier función en la cadena de destino con cualquier número de parámetros y un Tunelamiento de Transacciones que se utilizará para la verificación y decodificación de transacciones firmadas por EOA con la implementación de la biblioteca en la cadena de destino.
+
+[DevPost](https://devpost.com/software/x-chain-arbitraty-execution)
+
+[Repo](https://github.com/jistro/X-Chain_Arbitrary_Execution)
+
+[video](https://www.youtube.com/watch?v=odcTzwmhhNk)
+
 
 ### ICPoaps
 
