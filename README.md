@@ -32,6 +32,16 @@ An easy-to-use dApp lets any NFT holder or community group (called a SAFE) set u
 
 [ETH Global](https://ethglobal.com/showcase/gm-fam-ayigu)
 
+### PG ID // For ETHGlobal London 2024 Async hackathon
+
+<img src="./README_assets/coverPgID.png" height="300px"/>
+
+A personalized Smart Account that rewards Public Goods contributions with onchain perks such as fee discounts from DeFi dApps
+
+[Repo page](https://github.com/jistro/PG-ID) 
+
+[ETH Global](https://ethglobal.com/showcase/pg-id-ayjcr)
+
 ### Arbitrum Gas Hub
 
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/22781439/275346622-1cf69995-a9f9-4697-9c23-167b1d9aa4ea.png" height="100px"/>
