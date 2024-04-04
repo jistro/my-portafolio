@@ -103,6 +103,16 @@ Una dApp fácil de usar permite a cualquier titular de NFT o grupo comunitario (
 
 [ETH Global](https://ethglobal.com/showcase/gm-fam-ayigu)
 
+### PG ID // Para ETHGlobal London 2024 Async hackathon
+
+<img src="./README_assets/coverPgID.png" height="300px"/>
+
+Una cuenta inteligente personalizada que recompensa las contribuciones de bienes públicos con beneficios en cadena, como descuentos en tarifas de DeFi dApps
+
+[Repositorio](https://github.com/jistro/PG-ID) 
+
+[ETH Global](https://ethglobal.com/showcase/pg-id-ayjcr)
+
 ### Arbitrum Gas Hub
 
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/22781439/275346622-1cf69995-a9f9-4697-9c23-167b1d9aa4ea.png" height="100px"/>
