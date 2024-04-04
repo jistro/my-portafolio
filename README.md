@@ -22,7 +22,7 @@ Inspired by the NFT/DAO project [nouns](https://nouns.wtf/), Noggles NFT is a co
 
 [Repo page](https://github.com/jistro/my-portafolio/tree/main/NogglesNFT)
 
-### gm Fam! // For ETHOnline 2023 hackathon
+### gm Fam! // For ETHOnline 2023 Async hackathon
 
 <img src="./README_assets/coverGmFam.png" height="300px"/>
 
@@ -32,7 +32,7 @@ An easy-to-use dApp lets any NFT holder or community group (called a SAFE) set u
 
 [ETH Global](https://ethglobal.com/showcase/gm-fam-ayigu)
 
-### PG ID // For ETHGlobal London 2024 Async hackathon
+### PG ID // For ETHGlobal London 2024 hackathon
 
 <img src="./README_assets/coverPgID.png" height="300px"/>
 
