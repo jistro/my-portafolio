@@ -22,7 +22,7 @@ Inspired by the NFT/DAO project [nouns](https://nouns.wtf/), Noggles NFT is a co
 
 [Repo page](https://github.com/jistro/my-portafolio/tree/main/NogglesNFT)
 
-### gm Fam! // For ETHOnline 2023 Async hackathon
+### gm Fam! // For ETHOnline 2023 hackathon
 
 <img src="./README_assets/coverGmFam.png" height="300px"/>
 
@@ -103,7 +103,7 @@ Una dApp fácil de usar permite a cualquier titular de NFT o grupo comunitario (
 
 [ETH Global](https://ethglobal.com/showcase/gm-fam-ayigu)
 
-### PG ID // Para ETHGlobal London 2024 Async hackathon
+### PG ID // Para ETHGlobal London 2024 hackathon
 
 <img src="./README_assets/coverPgID.png" height="300px"/>
 
